@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a3219f7-5f62-4c42-92f9-b458932f36e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tweets/admin.py" afterPath="$PROJECT_DIR$/tweets/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tweets/models.py" afterPath="$PROJECT_DIR$/tweets/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mytweets.iws" />
@@ -602,7 +599,13 @@
       <option name="project" value="LOCAL" />
       <updated>1437713897878</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fifth commit.">
+      <created>1437714320097</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1437714320097</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -638,7 +641,8 @@
     <MESSAGE value="Second commit." />
     <MESSAGE value=" Third commit. added .gitignore" />
     <MESSAGE value="Fourth commit. Added user and tweet models." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fourth commit. Added user and tweet models." />
+    <MESSAGE value="Fifth commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fifth commit." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
