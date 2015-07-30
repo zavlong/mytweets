@@ -4,7 +4,11 @@
     <div class="col-md-12 column">
         {% for tweet in tweets.all %}
         <div class="well">
-            <span>{{ tweet.user.username }}:<br></span>
+            {% if tweet.is_reply == False %}
+                <span>{{ tweet.user.username }} from {{ tweet.country }} at {{ tweet.created_date }} UTC authored:<br><br></span>
+            {% else %}
+                <span>{{ tweet.user.username }} from {{ tweet.country }} at {{ tweet.created_date }} UTC replied:<br><br></span>
+            {% endif %}
             <span>{{ tweet.text }}</span>
         </div>
         {% endfor %}
