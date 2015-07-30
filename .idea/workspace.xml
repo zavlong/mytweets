@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a3219f7-5f62-4c42-92f9-b458932f36e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tweets/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/hashtag.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/profile.html" afterPath="$PROJECT_DIR$/templates/profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytweets/urls.py" afterPath="$PROJECT_DIR$/mytweets/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hashtag/views.py" afterPath="$PROJECT_DIR$/hashtag/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tweets/views.py" afterPath="$PROJECT_DIR$/tweets/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mytweets.iws" />
@@ -716,7 +709,13 @@
       <option name="project" value="LOCAL" />
       <updated>1438222831445</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Eighth commit. Hashtags can be viewed.">
+      <created>1438226461281</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1438226461281</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -763,7 +762,8 @@
     <MESSAGE value="Fifth commit." />
     <MESSAGE value="Sixth commit." />
     <MESSAGE value="Seventh commit. Added hashtags" />
-    <option name="LAST_COMMIT_MESSAGE" value="Seventh commit. Added hashtags" />
+    <MESSAGE value="Eighth commit. Hashtags can be viewed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Eighth commit. Hashtags can be viewed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
