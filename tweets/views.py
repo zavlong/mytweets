@@ -1,8 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.views.generic import View
 from user_profile.models import User
 from models import Tweet
+from forms import TweetForm
+from hashtag.models import HashTag
 # Create your views here.
 
 # def index(request):
@@ -29,3 +31,20 @@ class Profile(View):
         params["tweets"] = tweets
         params["user"] = user
         return render(request, 'profile.html', params)
+
+class PostTweet(View):
+    """Tweet Post form available on page /user/<username> URL"""
+    def post(self, request, username):
+        form = TweetForm(self.request.POST)
+        if form.is_valid():
+            user = User.objects.get(username=username)
+            tweet = Tweet(text=form.cleaned_data['text'],
+            user=user,
+            country=form.cleaned_data['country'])
+            tweet.save()
+            words = form.cleaned_data['text'].split(" ")
+            for word in words:
+                if word[0] == "#":
+                    hashtag, created = HashTag.objects.get_or_create(name=word[1:])
+                    hashtag.tweet.add(tweet)
+        return HttpResponse()
