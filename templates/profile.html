@@ -20,6 +20,11 @@
     <div class="col-md-12 column">
       {% for tweet in tweets %}
       <div class="well">
+        {% if tweet.is_reply == False %}
+            <span>Authored in {{ tweet.country }} at {{ tweet.created_date }} UTC:<br><br></span>
+        {% else %}
+            <span>Replied in {{ tweet.country }} at {{ tweet.created_date }} UTC:<br><br></span>
+        {% endif %}
         <span>{{ tweet.text }}</span>
       </div>
       {% endfor %}
