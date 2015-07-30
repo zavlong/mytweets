@@ -2,10 +2,11 @@
 {% block content %}
 <div class="row clearfix">
 <div class="col-md-12 column">
+
 {% for tweet in tweets %}
-<div class="well">
-<span>{{ tweet.text }}</span>
-</div>
+    <div class="well">
+    {{ tweet.text }}
+    </div>
 {% endfor %}
 </div>
 </div>

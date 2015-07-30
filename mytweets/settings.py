@@ -37,7 +37,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'user_profile',
-    'tweets'
+    'tweets',
+    'hashtag'
 )
 
 MIDDLEWARE_CLASSES = (
