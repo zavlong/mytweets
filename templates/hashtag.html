@@ -4,6 +4,7 @@
     <div class="col-md-12 column">
         {% for tweet in tweets.all %}
         <div class="well">
+            <span>{{ tweet.user.username }}:<br></span>
             <span>{{ tweet.text }}</span>
         </div>
         {% endfor %}
